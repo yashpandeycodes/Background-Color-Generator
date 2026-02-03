@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI GENERATOR</title>
     <style>
-       #image{
-        height:100%;
-       }
-        body{
-          
-            color: white;
-           background-color: black;
+        #image {
+            height: 100%;
         }
-        h1{
+
+        body {
+
+            color: white;
+            background-color: black;
+        }
+
+        h1 {
             font-size: 40px;
             text-align: centre;
         }
-         form{
-            size:30px;
-         }
-         #otherinfo{
+
+        form {
+            size: 30px;
+        }
+
+        #otherinfo {
             display: grid;
             grid-template-rows: auto auto auto;
-         }
-         .others{
+        }
+
+        .others {
             padding-left: 30px;
             padding-top: 70px;
-         }
-         .button{
+        }
+
+        .button {
             padding-left: 50px;
-            height:30px;
+            height: 30px;
             width: 40px;
-         }
-         .main{
+        }
+
+        .main {
             font-size: 30px;
-         }
-         #result{
+        }
+
+        #result {
             color: grey;
             font-size: 30px;
             padding-left: 20px;
-         }
-         #BWG{
+        }
+
+        #BWG {
             color: grey;
             font-size: 30px;
             padding-left: 20px;
-         }
-         
+        }
     </style>
-    <script type="module" src="two.js"></script>
+    <script type="module" src="bmi.js"></script>
     <!-- <script>
         const form=document.querySelector(`form`);
         form.addEventListener(`submit`,function(event){
@@ -79,37 +88,39 @@
         })
     </script> -->
 </head>
+
 <body>
     <div id="yash">
-      
-    <h1>
-        <p>BMI GENERATOR</p>
-    </h1>
-    <form class="form">
-        <div class="main">
-        <p >
-            <label id="firstlabel">Height in cm:</label>
-            <input type="text" id="height">
-        </p>
-        <p>
-            <label>Weight in kg:</label>
-            <input type="text" id="weight">
-        </p>
-        </div>
-        <div class="button"><button>Calculate</button></div>
-        <div id="result"></div>
-        <div id="BWG"></div>
-        <div class="others">
-            <h2>
-                BMI Weight Guide
-            </h2>
-            <p id="otherinfo">
-                <span>Under weight=Less than 18.6</span>
-                <span>Normal Range=18.6 to 24.9</span>
-                <span>Over Weight=Greater than 24.9</span>
-            </p>
-        </div>
-    </form>
+
+        <h1>
+            <p>BMI GENERATOR</p>
+        </h1>
+        <form class="form">
+            <div class="main">
+                <p>
+                    <label id="firstlabel">Height in cm:</label>
+                    <input type="text" id="height">
+                </p>
+                <p>
+                    <label>Weight in kg:</label>
+                    <input type="text" id="weight">
+                </p>
+            </div>
+            <div class="button"><button>Calculate</button></div>
+            <div id="result"></div>
+            <div id="BWG"></div>
+            <div class="others">
+                <h2>
+                    BMI Weight Guide
+                </h2>
+                <p id="otherinfo">
+                    <span>Under weight=Less than 18.6</span>
+                    <span>Normal Range=18.6 to 24.9</span>
+                    <span>Over Weight=Greater than 24.9</span>
+                </p>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
